@@ -1,1 +1,7 @@
 *.user
+*.exp
+*.map
+*.lastbuildstate
+*.tlog
+*.opensdf
+*.sdf
