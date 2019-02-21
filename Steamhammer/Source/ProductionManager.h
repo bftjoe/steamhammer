@@ -1,6 +1,7 @@
 #pragma once
 
 #include <forward_list>
+#include <unordered_map>
 
 #include "Common.h"
 
@@ -19,6 +20,7 @@ class ProductionManager
 {
     ProductionManager();
     
+    std::unordered_map<BWAPI::Unit, BuildOrderItem> pendingUnit;
     BuildOrderQueue						_queue;
 	std::forward_list<ProductionGoal>	_goals;
 

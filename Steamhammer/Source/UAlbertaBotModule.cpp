@@ -46,6 +46,7 @@ void UAlbertaBotModule::onStart()
     // Set our BWAPI options according to the configuration. 
 	BWAPI::Broodwar->setLocalSpeed(Config::BWAPIOptions::SetLocalSpeed);
 	BWAPI::Broodwar->setFrameSkip(Config::BWAPIOptions::SetFrameSkip);
+  BWAPI::Broodwar->setLatCom(false);
     
     if (Config::BWAPIOptions::EnableCompleteMapInformation)
     {
